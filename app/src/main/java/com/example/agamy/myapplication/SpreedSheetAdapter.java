@@ -49,10 +49,10 @@ public class SpreedSheetAdapter extends ArrayAdapter<SpreedSheetModel.ValueRange
         tvTitle.setText(myTitles.get(position));
         if(myPics.get(position).isEmpty())
         {
-            ivPic.setImageResource(R.drawable.ic_launcher_foreground);
+            ivPic.setImageResource(R.mipmap.ic_launcher);
 
         }else {
-            Picasso.get().load(myPics.get(position)).placeholder(R.drawable.ic_launcher_background).into(ivPic);
+            Picasso.get().load(myPics.get(position)).placeholder(R.mipmap.ic_launcher).into(ivPic);
         }
         // Return the completed view to render on screen
         return convertView;
